@@ -1,0 +1,19 @@
+table {
+    background-color: pink;
+    color:blueviolet;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+}
+
+.azul {
+    color:blue
+}
+
+.underlined {
+    text-decoration: underline;
+}
+
+.table-header {
+    font-weight: bold;
+}

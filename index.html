@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!--Como representar cada uno de los caracteres -->
+    <title> Relevant information about me</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+
+</head>
+<body>
+    <!--Contenido -->
+    <h1 style="font-family:Verdana, Geneva, Tahoma, sans-serif">Personal Page:</h1>
+    <!--Lista en punteo -->
+
+    <ul> 
+        <li>Name: Javiera Muñoz</li>
+        <li>Major: Ingeniría Civil Industrial</li>
+        <li>Year of University Enrollment: 2021</li>
+        <!-- Link -->
+        <li>Link: <a href="https://github.com/javimunozz/javimunozz.github.io.git">Link to my Github</a></li>
+        <li>
+            Personal summary: Soy estudiante de tercer año de Ingeniería Civil Industrial en la Universidad de Los
+            Andes, me considero una persona motivada y comprometida con mi carrera. Tengo
+            pasión por aprender y he adquirido importantes conocimientos y habilidades a lo
+            largo de mi formación académica. Mi dedicación, esfuerzo y estudio me han
+            permitido destacarme en el ámbito de las matemáticas, donde me siento cómoda y
+            segura trabajando con números.
+        </li>
+    </ul>
+
+    <!--Tabla -->
+    <table>
+        <tr class="table-header"> <!-- Fila de la tabla -->
+            <td class="azul underlined">Skill</td>
+            <td class="azul underlined">Level</td>
+        </tr>
+        <tr>
+            <td>Python</td>
+            <td>Advance</td>
+        </tr>
+        <tr>
+            <td>JavaScript</td>
+            <td>Basic</td>
+        </tr>
+        <tr>
+            <td>HTML/CSS</td>
+            <td>Basic</td>
+        </tr>
+        <tr>
+            <td>Git</td>
+            <td>Advance</td>
+        </tr>
+        <tr>
+            <td>Excel</td>
+            <td>Basic</td>
+        </tr>
+        <tr>
+            <td>SQL</td>
+            <td>Advance</td>
+        </tr>
+        <tr>
+            <td>Ruby</td>
+            <td>Basic</td>
+        </tr>
+        <tr>
+            <td>English</td>
+            <td>Advance</td>
+        </tr>
+        <tr>
+            <td>Spanish</td>
+            <td>Native</td>
+        </tr>
+    </table>
+
+        <!-- Campo de texto y botón -->
+        <input type="text" id="textInput" placeholder="Escribe aquí..."><br><br>
+        <button onclick="updateContent()">Actualizar</button><br><br>
+        
+    <script>
+        function updateContent() {
+            //Iguala el contenido del texto con el que uno escribe
+            document.getElementById('contentToUpdate').textContent = document.getElementById('textInput').value;
+        }
+    </script>
+    
+        <!-- Se mostrará el texto ingresado -->
+        <div id="contentToUpdate">Aquí aparecerá el texto que ingreses y actualices.</div>
+    
+</body>
+</html>
