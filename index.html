@@ -4,92 +4,188 @@
     <meta charset="UTF-8"> <!--Como representar cada uno de los caracteres -->
     <title> Relevant information about me</title>
     <link rel="stylesheet" href="style.css">
-    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
+        }
+        .underlined {
+            text-decoration: underline;
+        }
+        .list-item {
+            text-align: left;
+        }
+        .table-container {
+            display: flex;
+            justify-content: center;
         }
     </style>
 
 </head>
 <body>
-    <!--Contenido -->
-    <h1 style="font-family:Verdana, Geneva, Tahoma, sans-serif">Personal Page:</h1>
-    <!--Lista en punteo -->
+    <div class="container-sm">
+        <!--Contenido -->
+        <h1 class="mt-5" style="font-family:Verdana, Geneva, Tahoma, sans-serif">Personal Page:</h1>
+        <div class="row">
+            <div class="col-sm-8">
+                <!-- Inicio de la lista de punteos -->
+                <ul class="list"> 
+                    <li class="list-item">Name: Javiera Muñoz</li>
+                    <li class="list-item">Major: Ingeniería Civil Industrial</li>
+                    <li class="list-item">Year of University Enrollment: 2021</li>
+                    <li class="list-item">Link: <a href="https://github.com/javimunozz/javimunozz.github.io.git">Link to my Github</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-12">
+                <ul class="list"> 
+                    <li class="list-item">
+                        Personal summary: Soy estudiante de tercer año de Ingeniería Civil Industrial en la Universidad de Los Andes, me considero una persona motivada y comprometida con mi carrera. Tengo pasión por aprender y he adquirido importantes conocimientos y habilidades a lo largo de mi formación académica. Mi dedicación, esfuerzo y estudio me han permitido destacarme en el ámbito de las matemáticas, donde me siento cómoda y segura trabajando con números.
+                    </li>
+                </ul>
+            </div>
+                <!-- Fin de la lista de punteos -->
+        </div>
+    </div>    
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-sm-10 col-md-6 col-lg-4">
+                <!-- La tabla ocupa 4 de las 12 columnas en pantallas medianas y 12 de las 12 columnas en pantallas pequeñas-->
+                <!--Tabla -->
+                <table class="table mx-auto" style="margin-left: auto; margin-right: auto;">
+                    <thead class="table-header mx-auto"> <!-- Fila de la tabla -->
+                        <tr>
+                            <th scope="col" class="azul underlined">Skill</th>
+                            <th scope="col" class="azul underlined">Level</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Python</td>
+                            <td>Advance</td>
+                        </tr>
+                        <tr>
+                            <td>JavaScript</td>
+                            <td>Basic</td>
+                        </tr>
+                        <tr>
+                            <td>HTML/CSS</td>
+                            <td>Basic</td>
+                        </tr>
+                        <tr>
+                            <td>Git</td>
+                            <td>Advance</td>
+                        </tr>
+                        <tr>
+                            <td>Excel</td>
+                            <td>Basic</td>
+                        </tr>
+                        <tr>
+                            <td>SQL</td>
+                            <td>Advance</td>
+                        </tr>
+                        <tr>
+                            <td>Ruby</td>
+                            <td>Basic</td>
+                        </tr>
+                        <tr>
+                            <td>English</td>
+                            <td>Advance</td>
+                        </tr>
+                        <tr>
+                            <td>Spanish</td>
+                            <td>Native</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
 
-    <ul> 
-        <li>Name: Javiera Muñoz</li>
-        <li>Major: Ingeniría Civil Industrial</li>
-        <li>Year of University Enrollment: 2021</li>
-        <!-- Link -->
-        <li>Link: <a href="https://github.com/javimunozz/javimunozz.github.io.git">Link to my Github</a></li>
-        <li>
-            Personal summary: Soy estudiante de tercer año de Ingeniería Civil Industrial en la Universidad de Los
-            Andes, me considero una persona motivada y comprometida con mi carrera. Tengo
-            pasión por aprender y he adquirido importantes conocimientos y habilidades a lo
-            largo de mi formación académica. Mi dedicación, esfuerzo y estudio me han
-            permitido destacarme en el ámbito de las matemáticas, donde me siento cómoda y
-            segura trabajando con números.
-        </li>
-    </ul>
-
-    <!--Tabla -->
-    <table>
-        <tr class="table-header"> <!-- Fila de la tabla -->
-            <td class="azul underlined">Skill</td>
-            <td class="azul underlined">Level</td>
-        </tr>
-        <tr>
-            <td>Python</td>
-            <td>Advance</td>
-        </tr>
-        <tr>
-            <td>JavaScript</td>
-            <td>Basic</td>
-        </tr>
-        <tr>
-            <td>HTML/CSS</td>
-            <td>Basic</td>
-        </tr>
-        <tr>
-            <td>Git</td>
-            <td>Advance</td>
-        </tr>
-        <tr>
-            <td>Excel</td>
-            <td>Basic</td>
-        </tr>
-        <tr>
-            <td>SQL</td>
-            <td>Advance</td>
-        </tr>
-        <tr>
-            <td>Ruby</td>
-            <td>Basic</td>
-        </tr>
-        <tr>
-            <td>English</td>
-            <td>Advance</td>
-        </tr>
-        <tr>
-            <td>Spanish</td>
-            <td>Native</td>
-        </tr>
-    </table>
-
-        <!-- Campo de texto y botón -->
-        <input type="text" id="textInput" placeholder="Escribe aquí..."><br><br>
-        <button onclick="updateContent()">Actualizar</button><br><br>
-        
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <!-- Campo de texto y botón -->
+                <div class="input-group mb-2">
+                    <input type="text" id="textInput" class="form-control" placeholder="Escribe aquí...">
+                    <div class="input-group-append">
+                        <!-- Component Buttons-->
+                        <button onclick="updateContent()" class="btn btn-outline-primary">Actualizar</button>
+                    </div>
+                </div>
+                <!-- Se mostrará el texto ingresado -->
+                <div id="contentToUpdate" >Aquí aparecerá el texto que ingreses y actualices.</div>
+            </div>
+        </div>
+    </div>
     <script>
         function updateContent() {
-            //Iguala el contenido del texto con el que uno escribe
+            // Iguala el contenido del texto con el que uno escribe
             document.getElementById('contentToUpdate').textContent = document.getElementById('textInput').value;
         }
     </script>
     
-        <!-- Se mostrará el texto ingresado -->
-        <div id="contentToUpdate">Aquí aparecerá el texto que ingreses y actualices.</div>
-    
+
+    <!-- Components-->
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-sm-10 col-md-6 col-lg-4">
+                <!-- Card-->
+                <div class="card" style="max-width: 18rem;">
+                    <img src="https://www.uandes.cl/wp-content/uploads/2019/01/campus-aundes-6.jpg" class="card-img-top" alt="Universidad de Los Andes">
+                    <div class="card-body">
+                        <h5 class="card-title">Universidad de Los Andes</h5>
+                        <p class="card-text">La Universidad de los Andes fue fundada en 1989, en Santiago de Chile, por un grupo de académicos y profesionales que, inspirados en las enseñanzas de san Josemaría, fundador del Opus Dei.</p>
+                        <a href="https://www.uandes.cl/" class="btn btn-primary" target="_blank">Visitar sitio web</a>
+                    </div>
+                </div>
+                
+                <!-- Accordion-->
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h3 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          Misión UANDES
+                        </button>
+                      </h3>
+                      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>Misión.</strong> Profundizar en el conocimiento de todos los ámbitos del saber y contribuir a la formación integral de sus estudiantes. Quiere promover el diálogo académico, el trabajo bien hecho y el afán de servicio a la sociedad. Anhela irradiar un modo de vida coherente con las enseñanzas de la Iglesia católica. 
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h3 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Visión UANDES
+                        </button>
+                      </h3>
+                      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>Visión.</strong> Ser un centro de excelencia, caracterizado por su apertura a los retos culturales y morales de la sociedad, y su afán de responder a ellos con soluciones innovadoras. Sus profesores, alumni y estudiantes serán actores centrales en la vinculación de la Universidad con la sociedad.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h3 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          Ideario UANDES
+                        </button>
+                      </h3>
+                      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>Ideario.</strong> Este breve documento recoge los principios que inspiran a nuestra casa de estudios y a su comunidad. A través de los temas abordados, el Ideario de la Universidad de los Andes ofrece entonces una guía para el trabajo de quienes forman parte de la Universidad y están al servicio de sus alumnos y de la sociedad chilena.
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+      
 </body>
 </html>
